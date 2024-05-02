@@ -1,4 +1,5 @@
 const express = require('express')
+const githubData = require('./data/user.json')
 require('dotenv').config()
 const app = express()
 const port = 3000
@@ -21,7 +22,7 @@ app.get('/youtube', (req, res) => {
 })
 
 app.get('/github', (req, res) => {
-    res.json('<h2>Chai aur code</h2>')
+    res.json(githubData)
 })
 app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`)
