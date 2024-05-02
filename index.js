@@ -19,6 +19,10 @@ app.get('/login', (req, res) => {
 app.get('/youtube', (req, res) => {
     res.send('<h2>Chai aur code</h2>')
 })
+
+app.get('/github', (req, res) => {
+    res.json('<h2>Chai aur code</h2>')
+})
 app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`)
 })
